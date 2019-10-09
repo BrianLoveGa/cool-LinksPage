@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Noto+Serif|Roboto+Slab&display=swap');
+
+
 body {
 background-color: darkolivegreen;
 color: whitesmoke;
@@ -5,9 +8,57 @@ color: whitesmoke;
 }
 
 
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size:40px;
+    text-align: center;
+}
+
+
+h1.one {
+    font-family: 'Karla', sans-serif;
+    color: yellow;
+    text-align: justify;
+
+}
+
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    font-size:40px;
+
+}
+
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+}
+
 a {
 
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+}
+
+ul {
+
+    list-style-type: none;
+}
+
+
+ul.sites {
+
+    list-style-type: square;
+}
+
+ul.school {
+
+    list-style-type: georgian;
+}
+
+ul.serious {
+
+    list-style-type: armenian;
+
 }
