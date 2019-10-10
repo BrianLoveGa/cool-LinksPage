@@ -10,9 +10,16 @@ margin: 0;
 
 #grad1 {
 
-    height: 140px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */
+  height: 100%;
+  background-color: green; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+  /* font-family: 'Karla', sans-serif; */
+  text-align: justify;
+  /* color: black; */
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
 
 }
 
@@ -82,12 +89,6 @@ h3.glow{
 
 
 
-h1.one {
-    font-family: 'Karla', sans-serif;
-    color: yellow;
-    text-align: justify;
-
-}
 
 
 h2 {
@@ -126,3 +127,102 @@ ul.serious {
     list-style-type: armenian;
 
 } 
+
+
+
+
+
+@-moz-document url-prefix(){
+
+}
+
+@media only screen and (max-width: 640px)  {
+
+    #grad1 {
+
+        height:100%;
+        background-color: green;
+    }
+
+
+    h1{
+
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+
+    }
+
+    h1.glow {
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+
+
+    h1.one{
+        text-align: center;
+        font-family: 'Karla', serif;
+        font-size:  25px;
+    }
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 40px #e60073;
+    }
+    to {
+      text-shadow: 0 0 12px #fff, 0 0 17px #ff4da6, 0 0 23px #ff4da6, 0 0 28px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+    }
+  }
+
+@keyframes glow {
+
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 40px #e60073;
+      }
+      to {
+        text-shadow: 0 0 12px #fff, 0 0 17px #ff4da6, 0 0 23px #ff4da6, 0 0 28px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+      }
+}
+
+
+
+
+
+
+    h2{
+
+        font-family: 'Noto Serif', serif;
+        font-size:20px;
+
+    }
+
+
+    h3{
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 17px;
+
+    }    
+
+
+    a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        
+    }
+
+
+    ul {
+
+        
+        list-style-type: square;
+    }
+
+
+}
+
