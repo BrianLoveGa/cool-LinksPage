@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Noto+Serif|Roboto+Slab&display=swap');
 
-body, html {
-    background-color: darkolivegreen;
-    color: whitesmoke;
-    margin: 0;
-    
-    }
 
 
-/* for small screens and phones  */
+
+/* for the fox  */
+
+
+
+@-moz-document url-prefix(){
+
+}

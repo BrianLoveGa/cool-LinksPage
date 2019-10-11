@@ -1,228 +1,193 @@
- @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Noto+Serif|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Noto+Serif|Roboto+Slab&display=swap');
 
-
-body, html {
-background-color: darkolivegreen;
-color: whitesmoke;
-margin: 0;
-
+body,
+html {
+	background-color: darkolivegreen;
+	color: whitesmoke;
+	margin: 5px;
 }
 
-#grad1 {
-
-  height: 100%;
-  background-color: green; /* For browsers that do not support gradients */
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
-  /* font-family: 'Karla', sans-serif; */
-  text-align: justify;
-  /* color: black; */
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-
-
+h1.one {
+  color:white;
+	height: 100%;
+	background-color: green; /* For browsers that do not support gradients */
+	background-image: linear-gradient(
+		to right,
+		red,
+		orange,
+		yellow,
+		green,
+		blue,
+		indigo,
+		violet
+	);
+	font-family: 'Karla', sans-serif;
+	text-align: justify;
+	font-size: 60px;
 }
 
 h1 {
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+	color: rgb(255, 255, 255);
 }
 
 h1.glow {
-        font-size: 80px;
-        color: #fff;
-        text-align: center;
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
-        -moz-animation: glow 1s ease-in-out infinite alternate;
-        animation: glow 1s ease-in-out infinite alternate;
-      }
-
-h3.glow{
-
-    font-size: 20px;
-    color: rgb(165, 19, 19);
-    -webkit-animation: glowxx 1s ease-in-out infinite alternate;
-    -moz-animation: glowxx 1s ease-in-out infinite alternate;
-    animation: glowxx 1s ease-in-out infinite alternate;
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+	letter-spacing: 6px;
 }
 
+h3.glow {
+	font-size: 20px;
+	color: rgb(165, 19, 19);
+	-webkit-animation: glowxx 1s ease-in-out infinite alternate;
+	-moz-animation: glowxx 1s ease-in-out infinite alternate;
+	animation: glowxx 1s ease-in-out infinite alternate;
+}
 
 @-webkit-keyframes glow {
-        from {
-          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-        }
-        to {
-          text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-        }
-      }
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px rgb(253, 198, 198), 0 0 30px #f1a0c9,
+			0 0 40px #ec6dad, 0 0 50px #f059a4, 0 0 60px #e92989, 0 0 70px #e60073;
+	}
+	to {
+		text-shadow: 0 0 20px rgb(255, 227, 227), 0 0 30px #f7abd1, 0 0 40px #f789c0,
+			0 0 50px #fe66b2, 0 0 60px #ff4da6, 0 0 70px #fc2d94, 0 0 80px #fa0580;
+	}
+}
 
 @keyframes glow {
-
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-      }
-      to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-      }
-
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+			0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+			0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
 }
 
 @-webkit-keyframes glowxx {
-    from {
-      text-shadow: 0 0 5px #fff, 0 0 10px rgb(239, 248, 208), 0 0 15px #f2f8ae, 0 0 20px #effc99, 0 0 25px #e4fa7f, 0 0 30px #defa50, 0 0 35px #e4fa1c;
-    }
-    to {
-      text-shadow: 0 0 7px #fff, 0 0 14px rgb(239, 248, 208), 0 0 20px #f2f8ae, 0 0 30px #effc99, 0 0 40px #e4fa7f, 0 0 45px #defa50, 0 0 40px #e4fa1c;
-    }
-  }
-
-@keyframes glowxx {
-
-    from {
-        text-shadow: 0 0 5px #fff, 0 0 10px rgb(239, 248, 208), 0 0 15px #f2f8ae, 0 0 20px #effc99, 0 0 25px #e4fa7f, 0 0 30px #defa50, 0 0 35px #e4fa1c;
-      }
-      to {
-        text-shadow: 0 0 7px #fff, 0 0 14px rgb(239, 248, 208), 0 0 20px #f2f8ae, 0 0 30px #effc99, 0 0 40px #e4fa7f, 0 0 45px #defa50, 0 0 40px #e4fa1c;
-      }
-
+	from {
+		text-shadow: 0 0 5px #fff, 0 0 10px rgb(239, 248, 208), 0 0 15px #f2f8ae,
+			0 0 20px #effc99, 0 0 25px #e4fa7f, 0 0 30px #defa50, 0 0 35px #e4fa1c;
+	}
+	to {
+		text-shadow: 0 0 7px #fff, 0 0 14px rgb(239, 248, 208), 0 0 20px #f2f8ae,
+			0 0 30px #effc99, 0 0 40px #e4fa7f, 0 0 45px #defa50, 0 0 40px #e4fa1c;
+	}
 }
 
-
-
-
+@keyframes glowxx {
+	from {
+		text-shadow: 0 0 5px #fff, 0 0 10px rgb(239, 248, 208), 0 0 15px #f2f8ae,
+			0 0 20px #effc99, 0 0 25px #e4fa7f, 0 0 30px #defa50, 0 0 35px #e4fa1c;
+	}
+	to {
+		text-shadow: 0 0 7px #fff, 0 0 14px rgb(239, 248, 208), 0 0 20px #f2f8ae,
+			0 0 30px #effc99, 0 0 40px #e4fa7f, 0 0 45px #defa50, 0 0 40px #e4fa1c;
+	}
+}
 
 h2 {
-    font-family: 'Noto Serif', serif;
-    font-size:40px;
-
+	font-family: 'Noto Serif', serif;
+	font-size: 40px;
 }
 
 h3 {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 30px;
-} 
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 30px;
+}
 
 a {
-
-    text-decoration: none;
-    color: white;
-    font-size: 35px;
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
 }
 
 ul {
-    font-size: 45px;
-    list-style-type: none;
+	font-size: 45px;
+	list-style-type: none;
 }
 
-
-
-
 ul.school {
-
-    list-style-type: georgian;
+	list-style-type: georgian;
 }
 
 ul.serious {
-
-    list-style-type: armenian;
-
-} 
-
-
-
-
-
-@-moz-document url-prefix(){
-
+	list-style-type: armenian;
 }
 
-@media only screen and (max-width: 640px)  {
+@media only screen and (max-width: 640px) {
+	#grad1 {
+		height: 100%;
+		background-color: green;
+	}
 
-    #grad1 {
+	h1 {
+		font-family: 'Roboto Slab', serif;
+		text-align: center;
+	}
 
-        height:100%;
-        background-color: green;
-    }
+	h1.glow {
+		font-size: 30px;
+		color: #fff;
+		text-align: center;
+		-webkit-animation: glow 1s ease-in-out infinite alternate;
+		-moz-animation: glow 1s ease-in-out infinite alternate;
+		animation: glow 1s ease-in-out infinite alternate;
+	}
 
+	h1.one {
+		text-align: center;
+		font-family: 'Karla', serif;
+		font-size: 25px;
+	}
 
-    h1{
+	@-webkit-keyframes glow {
+		from {
+			text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073,
+				0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 40px #e60073;
+		}
+		to {
+			text-shadow: 0 0 12px #fff, 0 0 17px #ff4da6, 0 0 23px #ff4da6,
+				0 0 28px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+		}
+	}
 
-        font-family: 'Roboto Slab', serif;
-        text-align: center;
+	@keyframes glow {
+		from {
+			text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073,
+				0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 40px #e60073;
+		}
+		to {
+			text-shadow: 0 0 12px #fff, 0 0 17px #ff4da6, 0 0 23px #ff4da6,
+				0 0 28px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
+		}
+	}
 
-    }
+	h2 {
+		font-family: 'Noto Serif', serif;
+		font-size: 20px;
+	}
 
-    h1.glow {
-        font-size: 30px;
-        color: #fff;
-        text-align: center;
-        -webkit-animation: glow 1s ease-in-out infinite alternate;
-        -moz-animation: glow 1s ease-in-out infinite alternate;
-        animation: glow 1s ease-in-out infinite alternate;
-      }
+	h3 {
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 17px;
+	}
 
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+	}
 
-    h1.one{
-        text-align: center;
-        font-family: 'Karla', serif;
-        font-size:  25px;
-    }
-
-
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 40px #e60073;
-    }
-    to {
-      text-shadow: 0 0 12px #fff, 0 0 17px #ff4da6, 0 0 23px #ff4da6, 0 0 28px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
-    }
-  }
-
-@keyframes glow {
-
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073, 0 0 40px #e60073;
-      }
-      to {
-        text-shadow: 0 0 12px #fff, 0 0 17px #ff4da6, 0 0 23px #ff4da6, 0 0 28px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
-      }
+	ul {
+		list-style-type: square;
+	}
 }
-
-
-
-
-
-
-    h2{
-
-        font-family: 'Noto Serif', serif;
-        font-size:20px;
-
-    }
-
-
-    h3{
-        font-family: 'Fjalla One', sans-serif;
-        font-size: 17px;
-
-    }    
-
-
-    a {
-
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        
-    }
-
-
-    ul {
-
-        
-        list-style-type: square;
-    }
-
-
-}
-
