@@ -8,7 +8,7 @@ html {
 }
 
 h1.one {
-  color:white;
+  color:rgb(230, 218, 218);
 	height: 100%;
 	background-color: green; /* For browsers that do not support gradients */
 	background-image: linear-gradient(
@@ -23,8 +23,25 @@ h1.one {
 	);
 	font-family: 'Karla', sans-serif;
 	text-align: justify;
-	font-size: 60px;
+  font-size: 40px;
+  text-shadow:
+  3px -1px 0 #000,
+  3px -1px 0 #000,
+  -1px 3px 0 #000,
+  3px 3px 0 #000;
+  padding: 10px;
 }
+
+h1 a {
+  font-size:45px;
+  color: rgb(237, 226, 228);
+  text-shadow:
+  2px -1px 0 rgb(115, 123, 241),
+  2px -1px 0 rgb(5, 13, 123),
+  -1px 2px 0 rgb(115, 123, 241),
+  2px 2px 0 rgb(5, 13, 123);
+}
+
 
 h1 {
 	font-family: 'Roboto Slab', serif;
