@@ -2,6 +2,11 @@
 
 
 
+/* some button effects from https://ianlunn.github.io/Hover/ */
+
+
+
+
 html {
 	background-color: darkolivegreen;
   color: whitesmoke;
@@ -19,7 +24,7 @@ body{
 
 h4 a {
   font-size: 20px;
-  color:purple;
+  color:rgb(201, 97, 201);
   padding: 20px;
   
 
@@ -59,12 +64,6 @@ input:checked + .check {
   
 }
 
-input:checked + .space {
-
-  height:10px;
-  transition: width 2s, height 4s;
-  
-}
 
 
 
@@ -99,9 +98,9 @@ h1.one {
   -1px 3px 0 #000,
   3px 3px 0 #000;
   padding: 10px;
-
-
   filter: invert(.9) hue-rotate(240deg);
+  margin:5%;
+  width:1000px;
 }
 
 h1 a {
@@ -112,13 +111,13 @@ h1 a {
   2px -1px 0 rgb(5, 13, 123),
   -1px 2px 0 rgb(115, 123, 241),
   2px 2px 0 rgb(5, 13, 123);
-  width: 100%;
+ 
 
 }
 
 h1 a:hover{
 
-  font-size:48px;
+  font-size:47px;
 }
 
 
@@ -141,13 +140,7 @@ h1.glow {
 
 }
 
-h3.glow {
-	font-size: 20px;
-	color: rgb(165, 19, 19);
-	-webkit-animation: glowxx 1s ease-in-out infinite alternate;
-	-moz-animation: glowxx 1s ease-in-out infinite alternate;
-	animation: glowxx 1s ease-in-out infinite alternate;
-}
+
 
 @-webkit-keyframes glow {
 	from {
@@ -169,6 +162,35 @@ h3.glow {
 		text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
 			0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 	}
+}
+
+
+
+.me {
+
+  background-color: plum;
+  color:black;
+  border-radius: 10px;
+  padding:4px;
+  width:280px;
+}
+
+.me:hover{
+
+  background-color: rgb(228, 187, 228);
+  color:rgb(34, 27, 27);
+  border-radius: 15px;
+  padding:6px;
+  font-size:37px;
+
+}
+
+h3.glow {
+	font-size: 25px;
+	color: rgb(165, 19, 19);
+	-webkit-animation: glowxx 1s ease-in-out infinite alternate;
+	-moz-animation: glowxx 1s ease-in-out infinite alternate;
+	animation: glowxx 1s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glowxx {
@@ -193,14 +215,224 @@ h3.glow {
 	}
 }
 
+
+
+
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.sam {
+
+  -webkit-transform: perspective(2px) translateZ(0);
+  transform: perspective(2px) translateZ(0);
+  background-color: cornflowerblue;
+  width:290px;
+  border-radius: 10px;;
+  padding:5px;
+
+}
+
+
+.sam:hover {
+
+  -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+
+}
+
+
+.jake a {
+  color:black;
+}
+
+.jake  {
+ 
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  width:290px;
+  border-radius:10px;
+  color:rgb(91, 14, 235);
+  padding:3px;
+  background-color: rgb(184, 231, 55);
+
+}
+
+
+
+.jake:hover {
+
+  -webkit-animation-name: hvr-hang;
+  animation-name: hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+
+}
+
+
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+
+
+
+.mike{
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  background-color: darkslategray;
+  width:410px;
+  padding:15px;
+  border-radius:10px;
+  text-align: center;
+
+}
+
+.mike:hover{
+
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}
+
+
+h3.m{
+  margin:20px 0 0;
+ 
+}
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+
+
+
+
 h2 {
 	font-family: 'Noto Serif', serif;
-	font-size: 40px;
+  font-size: 40px;
+  margin:5%;
+  
 }
 
 h3 {
 	font-family: 'Fjalla One', sans-serif;
-	font-size: 30px;
+  font-size: 30px;
+  margin:5%;
 }
 
 
@@ -213,7 +445,8 @@ a {
 
 ul {
 	font-size: 45px;
-	list-style-type: none;
+  list-style-type: none;
+  margin:5%;
 }
 
 ul.school {
@@ -223,6 +456,15 @@ ul.school {
 ul.serious {
 	list-style-type: armenian;
 }
+
+footer{
+
+  margin: 2% 10%;
+  padding:10px;
+
+}
+
+
 
 @media only screen and (max-width: 640px) {
 
@@ -266,8 +508,8 @@ ul.serious {
 		text-align: center;
 		font-family: 'Karla', serif;
     font-size: 25px;
-    width:100%;
-    padding: 2px;
+    width:90%;
+    padding: 2%;
 	}
 
 	@-webkit-keyframes glow {
@@ -291,6 +533,9 @@ ul.serious {
 				0 0 28px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6, 0 0 45px #ff4da6;
 		}
 	}
+
+
+
 
 	h2 {
 		font-family: 'Noto Serif', serif;
