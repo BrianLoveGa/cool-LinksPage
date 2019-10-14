@@ -3,6 +3,9 @@
 
 
 /* some button effects from https://ianlunn.github.io/Hover/ */
+/* top picture click from this guy https://codepen.io/BretCameron */
+
+
 
 
 
@@ -24,7 +27,7 @@ body{
 
 h4 a {
   font-size: 20px;
-  color:rgb(201, 97, 201);
+  color:rgb(231, 165, 231);
   padding: 20px;
   
 
@@ -73,6 +76,11 @@ input:checked + .check {
 
 }
 
+.bg-image1{
+
+background-color: limegreen;
+
+}
 
 
 h1.one {
@@ -172,7 +180,7 @@ h1.glow {
   color:black;
   border-radius: 10px;
   padding:4px;
-  width:280px;
+  width:350px;
 }
 
 .me:hover{
@@ -182,6 +190,7 @@ h1.glow {
   border-radius: 15px;
   padding:6px;
   font-size:37px;
+  width:365px;
 
 }
 
@@ -271,12 +280,17 @@ h3.glow {
   }
 }
 
+h3.b {
+  color: black;
+}
+
+
 .sam {
 
   -webkit-transform: perspective(2px) translateZ(0);
   transform: perspective(2px) translateZ(0);
   background-color: cornflowerblue;
-  width:290px;
+  width:350px;
   border-radius: 10px;;
   padding:5px;
 
@@ -305,7 +319,7 @@ h3.glow {
  
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  width:290px;
+  width:350px;
   border-radius:10px;
   color:rgb(91, 14, 235);
   padding:3px;
@@ -371,10 +385,10 @@ h3.glow {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   background-color: darkslategray;
-  width:410px;
-  padding:15px;
+  width:350px;
+  padding:1px;
   border-radius:10px;
-  text-align: center;
+  
 
 }
 
@@ -393,7 +407,9 @@ h3.glow {
 
 
 h3.m{
-  margin:20px 0 0;
+  margin:20px 0 10px;
+  color: darkslategrey;
+  padding:5px;
  
 }
 
@@ -420,7 +436,10 @@ h3.m{
 
 
 
-
+h2.cntr {
+  text-align: center;
+  color: black;
+}
 
 h2 {
 	font-family: 'Noto Serif', serif;
@@ -435,6 +454,81 @@ h3 {
   margin:5%;
 }
 
+
+.glitch{
+  color:white;
+  text-transform:uppercase;
+  font-size:80px;
+  position:relative;
+  text-align: center;
+  letter-spacing: 30px;
+  margin:0 auto;
+
+}
+
+
+.glitch::before, .glitch::after{
+  content: attr(data-text);
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: -1;
+ 
+}
+
+
+.glitch::before{
+
+  color:#f7c9e0;
+  animation: glitch-effect 2s infinite;
+
+}
+
+.glitch::after{
+  color: #c2cbf8;
+  animation: glitch-effect 2s infinite;
+}
+
+
+@keyframes glitch-effect {
+
+  0% {
+    left: -4px;
+    top: -5px;
+
+  }
+
+  20% {
+    left: 4px;
+    top: 3px;
+  }
+
+  40% {
+    left: -2px;
+    top: 3px;
+  }
+
+  60% {
+    left: 3px;
+    top: -4px;
+  }
+
+  80% {
+    left: 5px;
+    top: -3px;
+  }
+
+  100% {
+    left: -2px;
+    top: 4px;
+  }
+}
+
+h2.link {
+  text-align:center;
+}
 
 
 a {
@@ -457,14 +551,27 @@ ul.serious {
 	list-style-type: armenian;
 }
 
+footer a {
+  color: rgb(0, 38, 255);
+  font-size:40px;
+}
+
 footer{
 
   margin: 2% 10%;
   padding:10px;
+  background-image: linear-gradient(-90deg, rgb(4, 77, 37), rgb(135, 201, 146));
+  text-align: center;
+
 
 }
 
+h2.ft {
 
+  color: rgb(121, 0, 24);
+  font-size:20px;
+
+}
 
 @media only screen and (max-width: 640px) {
 
