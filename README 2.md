@@ -6,9 +6,12 @@ __here lies pages I like__
 
 Links
 
-and a place to practice my CSS
+and a place to practice my CSS and html
+
+__No javascript__ used here. 
 
 ******
+
 
 check out my page
 
