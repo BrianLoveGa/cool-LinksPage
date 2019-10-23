@@ -124,6 +124,40 @@ h1.glow {
     }
 }
 
+#ball {
+    width: 100px;
+    height: 100px;
+    margin: 2% 30%;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(75deg, #055858, #eb6e6e);
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: 155px;
+    }
+    50% {
+        left: 350px;
+    }
+    75% {
+        left: 140px;
+    }
+    100% {
+        left: 5px;
+    }
+}
+
+.wall {
+    height: 50px;
+}
+
 .box {
     background-color: white;
     color: green;
