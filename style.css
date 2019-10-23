@@ -1,6 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Noto+Serif|Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Karla|Noto+Serif|Roboto+Slab&display=swap");
 
-/* some button effects from https://ianlunn.github.io/Hover/ */
+/* some button effects from https://ianlunn.github.io/Hover/ 
+Copyright 2017 Ian Lunn Design Limited
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation 
+files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, 
+modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software 
+is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR 
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
 
 
 /* top picture click from this guy https://codepen.io/BretCameron */
@@ -59,12 +69,12 @@ h1.one {
     background-color: green;
     /* For browsers that do not support gradients */
     background-image: linear-gradient( to right, red, orange, yellow, green, blue, indigo, violet);
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     text-align: justify;
     font-size: 40px;
     text-shadow: 3px -1px 0 #000, 3px -1px 0 #000, -1px 3px 0 #000, 3px 3px 0 #000;
     padding: 10px;
-    filter: invert(.9) hue-rotate(240deg);
+    filter: invert(0.9) hue-rotate(240deg);
     margin: 5%;
     width: 1000px;
 }
@@ -80,7 +90,7 @@ h1 a:hover {
 }
 
 h1 {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto Slab", serif;
     text-align: center;
     color: rgb(255, 255, 255);
     width: 100%;
@@ -128,7 +138,7 @@ h1.glow {
     width: 570px;
     margin: 2% 25%;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .8), 0 16px 16px rgba(0, 0, 0, .6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 16px 16px rgba(0, 0, 0, 0.6);
 }
 
 .link-box {
@@ -138,16 +148,16 @@ h1.glow {
     padding: 5px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 10px 16px 10px rgba(0, 200, 0, .9), 12px 0 16px rgba(70, 0, 70, .9);
+    box-shadow: 10px 16px 10px rgba(0, 200, 0, 0.9), 12px 0 16px rgba(70, 0, 70, 0.9);
 }
 
 .link-box a {
-    color: rgba(6, 70, 6, .8);
+    color: rgba(6, 70, 6, 0.8);
     padding: 0 10px;
 }
 
 .link-box a:hover {
-    background-color: rgba(6, 70, 6, .8);
+    background-color: rgba(6, 70, 6, 0.8);
     color: whitesmoke;
     border-radius: 8px;
     padding: 2px 12px;
@@ -260,7 +270,6 @@ h3.b {
     background-color: cornflowerblue;
     width: 350px;
     border-radius: 10px;
-    ;
     padding: 5px;
 }
 
@@ -416,13 +425,13 @@ h2.cntr {
 }
 
 h2 {
-    font-family: 'Noto Serif', serif;
+    font-family: "Noto Serif", serif;
     font-size: 40px;
     margin: 5%;
 }
 
 h3 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
     font-size: 30px;
     margin: 5%;
 }
@@ -549,13 +558,13 @@ h2.ft {
     #grad1 {
         height: 100%;
         background-color: green;
-        width: 100%
+        width: 100%;
     }
     h1 a {
         font-size: 25px;
     }
     h1 {
-        font-family: 'Roboto Slab', serif;
+        font-family: "Roboto Slab", serif;
         text-align: center;
     }
     h1.glow {
@@ -569,7 +578,7 @@ h2.ft {
     }
     h1.one {
         text-align: center;
-        font-family: 'Karla', serif;
+        font-family: "Karla", serif;
         font-size: 25px;
         width: 90%;
         padding: 2%;
@@ -591,11 +600,11 @@ h2.ft {
         }
     }
     h2 {
-        font-family: 'Noto Serif', serif;
+        font-family: "Noto Serif", serif;
         font-size: 20px;
     }
     h3 {
-        font-family: 'Fjalla One', sans-serif;
+        font-family: "Fjalla One", sans-serif;
         font-size: 17px;
     }
     a {
