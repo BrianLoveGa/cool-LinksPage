@@ -114,6 +114,45 @@ h1.glow {
     }
 }
 
+.box {
+    background-color: white;
+    color: green;
+    width: 480px;
+    margin: 2% 5%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.boxy {
+    width: 570px;
+    margin: 2% 25%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .8), 0 16px 16px rgba(0, 0, 0, .6);
+}
+
+.link-box {
+    background-color: white;
+    margin: 2% 5%;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 16px 10px rgba(0, 200, 0, .9), 12px 0 16px rgba(70, 0, 70, .9);
+}
+
+.link-box a {
+    color: rgba(6, 70, 6, .8);
+    padding: 0 10px;
+}
+
+.link-box a:hover {
+    background-color: rgba(6, 70, 6, .8);
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 2px 12px;
+}
+
 .me {
     background-color: plum;
     color: black;
@@ -243,6 +282,7 @@ h3.b {
 .jake {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     width: 350px;
     border-radius: 10px;
     color: rgb(91, 14, 235);
@@ -251,49 +291,70 @@ h3.b {
 }
 
 .jake:hover {
-    -webkit-animation-name: hvr-hang;
-    animation-name: hvr-hang;
-    -webkit-animation-duration: .3s, 1.5s;
-    animation-duration: .3s, 1.5s;
-    -webkit-animation-delay: 0s, .3s;
-    animation-delay: 0s, .3s;
-    -webkit-animation-timing-function: ease-out, ease-in-out;
-    animation-timing-function: ease-out, ease-in-out;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-direction: normal, alternate;
-    animation-direction: normal, alternate;
+    -webkit-animation-name: hvr-wobble-skew;
+    animation-name: hvr-wobble-skew;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
 
-@-webkit-keyframes hvr-hang {
-    0% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
+
+/* Wobble Skew */
+
+@-webkit-keyframes hvr-wobble-skew {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
     }
-    50% {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
     }
     100% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
+        -webkit-transform: skew(0);
+        transform: skew(0);
     }
 }
 
-@keyframes hvr-hang {
-    0% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
+@keyframes hvr-wobble-skew {
+    16.65% {
+        -webkit-transform: skew(-12deg);
+        transform: skew(-12deg);
     }
-    50% {
-        -webkit-transform: translateY(4px);
-        transform: translateY(4px);
+    33.3% {
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+    }
+    49.95% {
+        -webkit-transform: skew(-6deg);
+        transform: skew(-6deg);
+    }
+    66.6% {
+        -webkit-transform: skew(4deg);
+        transform: skew(4deg);
+    }
+    83.25% {
+        -webkit-transform: skew(-2deg);
+        transform: skew(-2deg);
     }
     100% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px);
+        -webkit-transform: skew(0);
+        transform: skew(0);
     }
 }
 
@@ -315,6 +376,10 @@ h3.b {
     animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+}
+
+.mi {
+    color: black;
 }
 
 h3.m {
@@ -442,6 +507,22 @@ ul.school {
 
 ul.serious {
     list-style-type: armenian;
+}
+
+.spin-tainer {
+    margin: 4% 8%;
+}
+
+.serious {
+    color: darkblue;
+    background-color: yellow;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.spin-pad {
+    padding: 5px 70px;
+    margin: 5px;
 }
 
 footer a {
