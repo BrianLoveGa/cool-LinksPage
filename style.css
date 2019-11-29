@@ -579,10 +579,6 @@ ul {
   margin: 5%;
 }
 
-ul.school {
-  list-style-type: georgian;
-}
-
 .flt-shdw {
   vertical-align: middle;
   color: rgb(208, 236, 106);
@@ -833,15 +829,14 @@ ul.school {
   margin: 4% 8%;
 }
 
-.parallaxcode{
-	background-image: url("./public/images/GerdAltmannPixabay.jpg");
+.parallaxcode {
+  background-image: url("./public/images/GerdAltmannPixabay.jpg");
   min-height: 700px;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .serious {
@@ -861,8 +856,9 @@ ul.school {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  margin: 5% 20%;
+  margin: 5% 5%;
   padding: 5px;
+  width: 90%;
 }
 
 .git {
@@ -870,7 +866,7 @@ ul.school {
   background-color: red;
   width: 250px;
   padding: 10px;
-  margin: 0 1%;
+  margin: 0 3%;
   vertical-align: middle;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
@@ -890,7 +886,7 @@ ul.school {
   width: 250px;
   color: black;
   padding: 10px;
-  margin: 0 1%;
+  margin: 0 3%;
   vertical-align: middle;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
@@ -909,7 +905,7 @@ ul.school {
   background-color: green;
   width: 250px;
   padding: 10px;
-  margin: 0 1%;
+  margin: 0 3%;
   vertical-align: middle;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
@@ -984,9 +980,9 @@ h2.ft {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 640px) {
+@media (max-width: 770px) {
   body {
-    padding: 10px;
+    padding: 1%;
   }
   #grad1 {
     height: 100%;
@@ -1050,7 +1046,7 @@ h2.ft {
     font-size: 20px;
   }
   ul {
-    list-style-type: square;
+    list-style-type: none;
   }
   h4 a {
     font-size: 15px;
@@ -1064,5 +1060,39 @@ h2.ft {
     text-decoration: rgb(37, 233, 135) underline overline solid;
     font-size: 15px;
     margin: 0 3%;
+  }
+
+  .box {
+    width: 80%;
+
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .boxy {
+    width: 70%;
+    margin: 2% 0 2% 100px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 16px 16px rgba(0, 0, 0, 0.6);
+  }
+
+  .srs-tanr {
+    display: flex;
+    flex-direction: column;
+  }
+  .git {
+    margin: 2% 0 2% 7%;
+  }
+  .ga-1 {
+    margin: 2% 7% 2% 0;
+  }
+
+  .ga-2 {
+    margin: 2% 0 2% 7%;
+  }
+  .git,
+  .ga-1,
+  .ga-2 {
+    width: 95%;
   }
 }
