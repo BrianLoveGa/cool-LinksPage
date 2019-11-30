@@ -181,6 +181,10 @@ h1.glow {
   text-align: center;
 }
 
+.nav {
+  margin: 20% 0;
+}
+
 .boxy {
   width: 570px;
   margin: 2% 25%;
@@ -219,7 +223,9 @@ h1.glow {
   width: 350px;
 }
 
-.me:hover {
+.me:hover,
+.me:focus,
+.me:active {
   background-color: rgb(228, 187, 228);
   color: rgb(34, 27, 27);
   border-radius: 15px;
@@ -325,7 +331,9 @@ h3.b {
   padding: 5px;
 }
 
-.sam:hover {
+.sam:hover,
+.sam:focus,
+.sam:active {
   -webkit-animation-name: hvr-wobble-horizontal;
   animation-name: hvr-wobble-horizontal;
   -webkit-animation-duration: 1s;
@@ -351,7 +359,9 @@ h3.b {
   background-color: rgb(184, 231, 55);
 }
 
-.jake:hover {
+.jake:hover,
+.jake:focus,
+.jake:active {
   -webkit-animation-name: hvr-wobble-skew;
   animation-name: hvr-wobble-skew;
   -webkit-animation-duration: 1s;
@@ -427,7 +437,9 @@ h3.b {
   border-radius: 10px;
 }
 
-.mike:hover {
+.mike:hover,
+.mike:focus,
+.mike:active {
   -webkit-animation-name: hvr-buzz;
   animation-name: hvr-buzz;
   -webkit-animation-duration: 0.15s;
@@ -469,6 +481,103 @@ h3.m {
     transform: translateX(-3px) rotate(-2deg);
   }
 }
+
+.robby {
+  background-color: rgb(76, 73, 235);
+  width: 350px;
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.robby:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: calc(50% - 10px);
+  bottom: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: rgb(76, 73, 235) transparent transparent transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.robby:hover,
+.robby:focus,
+.robby:active {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.robby:hover:before,
+.robby:focus:before,
+.robby:active:before {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.ben {
+  background-color: rgb(26, 24, 122);
+  width: 350px;
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.ben:hover,
+.ben:focus,
+.ben:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
+
+.timo {
+  background-color: rgb(172, 120, 74);
+  width: 350px;
+  padding: 1px;
+  border-radius: 10px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.timo:before {
+  border: white dashed 4px;
+  content: "";
+  top: 4px;
+  left:50px;
+  right: 14px;
+  bottom: 4px;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  position: absolute;
+}
+.timo:hover:before,
+.timo:focus:before,
+.timo:active:before {
+  opacity: 1;
+}
+
+.area {
+  height: 40px;
+}
+/* end dev links */
 
 h2.cntr {
   text-align: center;
