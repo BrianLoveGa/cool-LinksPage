@@ -13,8 +13,13 @@ __No javascript__ used here.
 ******
 
 
-check out my page
+check out my portfolio pages
 
-
+first there was
 <www.BrianLoveless.com>
 
+Then there was
+<https://brianloveless-copy.netlify.com/>
+
+And now I have created
+<https://brianlovega.github.io/portfolio-improvements/>
